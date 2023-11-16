@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+    let product = {
+        name: 'sakshi',
+        college: 'PCCOE',
+        qualification: 'BE', //give colon at end, good practise for git modification
+        'total-age': 22,  //dash, hence quotes
+        qualities :{
+          english:10,
+          engg:10,
+          code:10,
+        },
+        intro: function(){
+          console.log(`hii , i'm ${this.name}`);
+        }
+
+    };
+
+
+    /*
+    console.log(typeof product);
+    console.log(product.name);  //access name
+    product.name = 'aaditya';  //change name
+    console.log(product);
+    console.log(product['name']);   //access name, use quotes
+    
+    let temp = 'name';
+    console.log(product.temp);  //find temp key
+    console.log(product[temp]); //finds name key
+
+    delete product.qualification;
+    
+    console.log(product);
+    console.log(product.intro());
+
+    
+
+    console.log('sakshi'.charAt(2))
+
+    //destructring
+    let {name} = product;
+    console.log(name);
+
+    */
+    //check object similarity
+
+    let product2 = {
+      name: 'aaditya',
+      college: 'PCCOE',
+      qualification: 'BE', //give colon at end, good practise for git modification
+      'total-age': 22,  //dash, hence quotes
+      qualities :{
+        english:10,
+        engg:10,
+        code:10,
+      },
+      intro: function(){
+        console.log(`hii , i'm ${this.name}`);
+      }
+
+  };
+
+  let product3 = {
+    name: 'aaditya',
+    college: 'PCCOE',
+    qualification: 'BE', //give colon at end, good practise for git modification
+    'total-age': 22,  //dash, hence quotes
+    qualities :{
+      english:10,
+      engg:10,
+      code:10,
+    },
+    intro: function(){
+      console.log(`hii , i'm ${this.name}`);
+    }
+
+};
+
+function isEqual(product1, product2){
+  if(typeof product1 !== 'object' || typeof product2 !== 'object'){
+    console.warn('the given input is not an object');
+    return false;
+  }
+
+  if(product1 == product2){
+    return true;
+  }
+
+  if(product1.name === product2.name &&
+  product1.college === product2.college){
+    return true;
+  }
+
+  return false;
+} 
+
+
+  console.log(isEqual(product, ''));
+
+   /*
+  console.log(isEqual(product, product2));
+  console.log(isEqual(product3, product2));
+  console.log(isEqual(product2, product3));
+  console.log(isEqual(product, product3));
+  */ 
+  </script>
+</body>
+</html>

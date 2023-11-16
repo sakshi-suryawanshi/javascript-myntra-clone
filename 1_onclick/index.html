@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <button id="bag-button" onclick="
+  add_to_bag()
+  ">Add to Bag</button>
+
+  <button id="wish-button">wishlist</button>
+
+  <h1 id="bag_summary"></h1>
+
+
+  <script>
+    let bagCount = 0;  
+    const add_to_bag = () => {
+      bagCount += 1;
+      document.querySelector('#bag_summary').innerText = `Bag has ${bagCount} items`;
+     }
+    document.querySelector('#bag_summary').innerText = `Bag has ${bagCount} items`;
+  </script>
+</body>
+</html>

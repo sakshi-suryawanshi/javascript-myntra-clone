@@ -1,0 +1,16 @@
+#bag-button{
+  background-color: aquamarine;
+  border: none ;
+  border-radius: 7px;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+
+#wish-button{
+  background-color: white;
+  border-radius: 7px;
+  border-width: 2px;
+  padding: 2px 25px;
+  text-transform: uppercase;
+
+}

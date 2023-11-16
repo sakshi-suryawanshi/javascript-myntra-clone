@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button id="html" onclick="console.log('Hi, I am HTML')">
+      Click me (HTML)
+    </button>
+    <button id="js">CLick me (Javascript)</button>
+
+    <button id="js1">CLick me (js1)</button> -->
+
+    <script>
+      /* let buttonElement = document.querySelector("#js");
+      buttonElement.addEventListener("click", (event) => {
+        console.log("click me");
+      });
+
+      let buttonElement1 = document.querySelector("#js1");
+
+      let behaviour = (event) => {
+        console.log("clicked on second button");
+      };
+      buttonElement1.addEventListener("click", behaviour);
+
+      let printDate = (event) => console.log(new Date());
+      buttonElement1.addEventListener("click", printDate);
+
+      buttonElement1.removeEventListener("click", behaviour); 
+      */
+
+      /*
+
+      arr = ["apple", "banana", "mango", "guava", "raspberry"];
+
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+      }
+      arr.forEach((fruit) => {
+        console.log(fruit);
+      });
+      //or
+      arr.forEach(function (fruit, idx) {
+        console.log(fruit.length);
+        console.log(idx);
+      });
+      */
+
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let odds = arr.filter((num, index) => {
+        if (num % 2 === 1) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      console.log(odds);
+
+      let newOdds = arr.filter((num, index) => {
+        return num % 2 === 1;
+      });
+
+      console.log(newOdds);
+
+      let newOdds1 = arr.filter((num, index) => num % 2 === 1);
+
+      console.log(newOdds1);
+
+      //map
+      let squares = arr.map((num, index) => {
+        return num * num;
+      });
+      console.log(squares);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basics</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bat Ball Stump Game</h1>
+
+  <!-- Bat working -->
+
+  <button onclick="
+  let computerChoice;
+  let randomNumber = Math.random() *3;
+  if(randomNumber > 0 && randomNumber <= 1){
+     computerChoice = 'Bat';
+  }else if(randomNumber > 1 && randomNumber <= 2){
+     computerChoice = 'Ball';
+  }else{
+     computerChoice = 'Stump';
+  }
+  
+  let resultMsg = '';
+
+  if(computerChoice === 'Ball'){
+    resultMsg = 'user won';
+  }else if(computerChoice === 'Bat'){
+    resultMsg = `It's a tie`;
+  }else if(computerChoice === 'Stump'){
+    resultMsg = 'Computer won';
+  }
+
+  alert(`You've chosen Bat,
+computer chosen ${computerChoice}
+and result is ${resultMsg}` );
+
+  ">Bat</button>
+
+<!-- Ball  make changes-->
+  <button onclick="
+
+  randomNumber = Math.random() *3;
+  if(randomNumber > 0 && randomNumber <= 1){
+     computerChoice = 'Bat';
+  }else if(randomNumber > 1 && randomNumber <= 2){
+     computerChoice = 'Ball';
+  }else{
+     computerChoice = 'Stump';
+  }
+  
+  resultMsg = '';
+
+  if(computerChoice === 'Ball'){
+    resultMsg = 'user won';
+  }else if(computerChoice === 'Bat'){
+    resultMsg = `It's a tie`;
+  }else if(computerChoice === 'Stump'){
+    resultMsg = 'Computer won';
+  }
+
+  alert(`You've chosen Bat,
+computer chosen ${computerChoice}
+and result is ${resultMsg}` );
+
+  ">Ball</button>
+
+<!-- Stump make changes-->
+  <button onclick="
+  computerChoice;
+  randomNumber = Math.random() *3;
+  if(randomNumber > 0 && randomNumber <= 1){
+     computerChoice = 'Bat';
+  }else if(randomNumber > 1 && randomNumber <= 2){
+     computerChoice = 'Ball';
+  }else{
+     computerChoice = 'Stump';
+  }
+  
+  resultMsg = '';
+
+  if(computerChoice === 'Ball'){
+    resultMsg = 'user won';
+  }else if(computerChoice === 'Bat'){
+    resultMsg = `It's a tie`;
+  }else if(computerChoice === 'Stump'){
+    resultMsg = 'Computer won';
+  }
+
+  alert(`You've chosen Bat,
+computer chosen ${computerChoice}
+and result is ${resultMsg}` );
+
+  ">Stump</button>
+
+<script>
+
+</script>
+
+</body>
+</html>
